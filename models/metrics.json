@@ -1,0 +1,106 @@
+{
+  "trained_at": "2026-10-09T07:36:27+00:00",
+  "dataset": {
+    "rows": 20640,
+    "train_rows": 16512,
+    "test_rows": 4128
+  },
+  "selection_criterion": "lowest cross-validated RMSE on the training set",
+  "best_model": "Random Forest",
+  "models": {
+    "Linear Regression": {
+      "test": {
+        "mae": 48966.30850625834,
+        "rmse": 66803.13890772291,
+        "r2": 0.6575916553584118
+      },
+      "cv_rmse": 68433.8563788426,
+      "cv_r2": 0.650039308619041
+    },
+    "Random Forest": {
+      "test": {
+        "mae": 31679.33129844961,
+        "rmse": 48127.60321049114,
+        "r2": 0.8222788685515715
+      },
+      "cv_rmse": 50454.58340120454,
+      "cv_r2": 0.8097702350293314
+    }
+  },
+  "feature_importance": [
+    {
+      "feature": "median_income",
+      "importance": 0.4740240288857636
+    },
+    {
+      "feature": "ocean_proximity_INLAND",
+      "importance": 0.1397531802643454
+    },
+    {
+      "feature": "population_per_household",
+      "importance": 0.12297903698517336
+    },
+    {
+      "feature": "longitude",
+      "importance": 0.05869848770884765
+    },
+    {
+      "feature": "latitude",
+      "importance": 0.05572061467343025
+    },
+    {
+      "feature": "housing_median_age",
+      "importance": 0.04451882330318746
+    },
+    {
+      "feature": "rooms_per_household",
+      "importance": 0.026938592111527923
+    },
+    {
+      "feature": "bedrooms_per_room",
+      "importance": 0.023787684821842542
+    },
+    {
+      "feature": "total_rooms",
+      "importance": 0.012743062037030791
+    },
+    {
+      "feature": "households",
+      "importance": 0.01220900708959426
+    }
+  ],
+  "feature_ranges": {
+    "longitude": {
+      "min": -124.35,
+      "max": -114.31
+    },
+    "latitude": {
+      "min": 32.54,
+      "max": 41.95
+    },
+    "housing_median_age": {
+      "min": 1.0,
+      "max": 52.0
+    },
+    "total_rooms": {
+      "min": 6.0,
+      "max": 39320.0
+    },
+    "total_bedrooms": {
+      "min": 2.0,
+      "max": 6210.0
+    },
+    "population": {
+      "min": 3.0,
+      "max": 35682.0
+    },
+    "households": {
+      "min": 2.0,
+      "max": 5358.0
+    },
+    "median_income": {
+      "min": 0.4999,
+      "max": 15.0001
+    }
+  }
+}
